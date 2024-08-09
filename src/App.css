@@ -1,38 +1,71 @@
-.App {
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-bg-color: #f1f1f1;
+  --dark-color:#191717;
+  --gradient:linear-gradient(45deg, #282972, #522872)
+}
+
+[data-theme='dark'] {
+  --bg-color: #000000;
+  --text-color: #ffffff;
+  --dark-color:#191717;
+  --header-bg-color: #333333;
+  --gradient:linear-gradient(45deg, #282972, #522872)
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Arimo:wght@600&family=DM+Sans:opsz@9..40&family=Fira+Sans:wght@900&family=Libre+Barcode+39+Extended+Text&family=Libre+Franklin&family=Noto+Sans:wght@300&family=Poppins:wght@400;500;800&family=Press+Start+2P&family=Rubik:wght@500&family=Tilt+Prism&family=Wallpoet&family=Work+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Chivo&display=swap');
+
+*{
+  font-family: "DM Sans",sans-serif !important;
+ 
+}
+
+.blue-btn{
+  border: none;
+  padding: 15px;
+  min-width: 150px;
+  background:#5FD068 !important;
+  border-radius: 100px;
+  color: #fff;
+  text-decoration: none;
+  min-width: 150px;
+  display: block;
+  max-width: fit-content;
+  margin: auto;
   text-align: center;
+  /* box-shadow: 5px 5px 0px #000; */
+  /* border: 2px solid #000; */
+  font-size: 1.1rem;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.blue-btn:hover{
+  opacity: 0.8;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.outline-btn{
+  border: none;
+  padding: 15px;
+  min-width: 150px;
+  background: #f1f1f1;
+  display: block;
+  max-width: fit-content;
+  max-width: auto;
+  text-align: center;
+  text-decoration: none;
+  /* border: 2px solid #000; */
+  color:#000;
+  border-radius: 100px;
+  /* box-shadow: 5px 5px 0px #000; */
+  font-size: 1.1rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.outline-btn:hover{
+  background:#5FD068 !important;
+  color: #ffffff;
 }
-
-.App-link {
-  color: #61dafb;
+.heading1{
+  letter-spacing: 1.2px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-main{
+  color: #5FD068;
 }

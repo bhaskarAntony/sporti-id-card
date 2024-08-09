@@ -1,0 +1,9 @@
+.hero{
+    /* background: linear-gradient(50deg, #fff, #ffffff, #C3FF93 ); */
+}
+
+@media (max-width:576px){
+    .hero a{    
+        min-width: 100% !important;
+    }
+}
